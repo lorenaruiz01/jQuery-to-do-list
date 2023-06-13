@@ -1,13 +1,20 @@
 
 function newItem(){
 
-//javascript
+//javascript commented out (in green), jQuery conversion in color
 //1. Adding a new item to the list of items: 
-   let li = document.createElement("li");
-   let inputValue = document.getElementById("input").value;
-   let text = document.createTextNode(inputValue);
-   li.appendChild(text);
+  //  let li = document.createElement("li");
+        let li = $('<li></li>');
+  //  let inputValue = document.getElementById("input").value;
+        let inputValue = $('#input').val();
+  //  let text = document.createTextNode(inputValue);
+  //  li.appendChild(text);
+        li.append(inputValue);
 
+
+
+
+// jQuery code:
    if (inputValue === '') {
      alert("You must write something!");
    } else {
@@ -96,3 +103,4 @@ function newItem(){
 
 
 
+ 
