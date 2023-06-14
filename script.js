@@ -5,16 +5,16 @@ function newItem(){
 //1. Adding a new item to the list of items: 
   //  let li = document.createElement("li");
         let li = $('<li></li>');
+
   //  let inputValue = document.getElementById("input").value;
         let inputValue = $('#input').val();
+  
   //  let text = document.createTextNode(inputValue);
   //  li.appendChild(text);
         li.append(inputValue);
 
 
-
-
-// jQuery code:
+// conditional
    if (inputValue === '') {
      alert("You must write something!");
    } else {
